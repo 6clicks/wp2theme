@@ -91,17 +91,19 @@ endif;
 /*--------------------------------------------------------------
 # Get Google Fonts
 --------------------------------------------------------------*/
-require_once 'inc/google-font.php';
-
+require_once  get_template_directory() . 'inc/google-font.php';
 
 /*--------------------------------------------------------------
 # Acf blocks
 --------------------------------------------------------------*/
+require get_template_directory() . '/inc/acf_blocks.php';
 
 /*--------------------------------------------------------------
-# Custom post types
+# Custom post types & taxonomies commenter si non utilisé
 --------------------------------------------------------------*/
+require_once  get_template_directory() . 'inc/custom_post_type.php';
 
 /*--------------------------------------------------------------
-# Custom Taxonomies
+# Block patterns
 --------------------------------------------------------------*/
+require get_template_directory() . '/inc/block-patterns.php';

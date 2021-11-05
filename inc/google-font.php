@@ -3,13 +3,13 @@
 # Get Google Fonts
 --------------------------------------------------------------*/
 
-if ( ! function_exists( 'ona_get_font_face_styles' ) ) :
+if ( ! function_exists( 'wp2_get_font_face_styles' ) ) :
 	/**
 	 * Get font face styles.
 	 *
 	 * @return string
 	 */
-	function ona_get_font_face_styles() {
+	function wp2_get_font_face_styles() {
 		return "
 		@font-face{
 			font-family: 'Gilda Display';

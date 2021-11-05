@@ -53,7 +53,7 @@ msgid "Hero Cover"
 msgstr ""
 
 #: inc/patterns/general-hero-cover.php:12
-msgid "Hello, I'm WP2. And this is my personal travel journal"
+msgid "Hello, I'm WP2. And this is my perswp2l travel journal"
 msgstr ""
 
 #: inc/patterns/general-page-title-with-image.php:6
