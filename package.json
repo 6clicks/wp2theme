@@ -1,0 +1,40 @@
+{
+  "name": "wp2theme",
+  "version": "1.0.0",
+  "description": "WordPress FSE theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6clicks/wp2theme.git"
+  },
+  "keywords": [
+    "WordPress"
+  ],
+  "author": "John Robert-Nicoud | 6clicks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/6clicks/wp2theme/issues"
+  },
+  "homepage": "https://github.com/6clicks/wp2theme#readme",
+  "dependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "npm-run-all": "^2.3.0",
+    "sass": "^1.43.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-postcss": "^9.0.1",
+    "vinyl-ftp": "^0.6.1"
+  }
+}
