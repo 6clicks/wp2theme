@@ -14,5 +14,5 @@ function wp2_flush_rewrite_rules() {
 	flush_rewrite_rules();
 }
 // ajouté un nouveau fichier par CPT que l'ont crée 
-require_once './_custom_post_type_demo.php';
+require_once  WP2_DIR  .'/inc/cpt/_custom_post_type_demo.php';
 

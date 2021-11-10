@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.wp-block-button .wp-block-button__link {
+  border: 1px solid transparent;
+}
+
+.wp-block-button.wp-block-button__link:hover,
+.wp-block-button.wp-block-button__link:focus,
+.wp-block-button.wp-block-button__link.has-focus,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-button .wp-block-button__link.has-focus {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
