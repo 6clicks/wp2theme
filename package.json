@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/6clicks/wp2theme#readme",
   "dependencies": {
+    "chokidar": "^3.5.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-imagemin": "^8.0.0",
     "gulp-notify": "^4.0.0",
