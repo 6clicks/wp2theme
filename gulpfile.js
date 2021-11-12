@@ -74,7 +74,7 @@ function ftpUp(done) {
         ignored: /(^|[\/\\])\../, // ignore dotfiles
         persistent: true
     });
-    const log = console.log.bind(console);
+   
     watcherFTP.on('change', function (event, path) {
         console.log(event, path)
         return src(globs, { base: '.', buffer: false })
