@@ -74,8 +74,8 @@ function ftpUp(done) {
         ignored: /(^|[\/\\])\../, // ignore dotfiles
         persistent: true
     });
-
-    watcherFTP.on('all', { ignoreInitial: false }, function (event, path) {
+    const log = console.log.bind(console);
+    watcherFTP.on('change', function (event, path) {
         console.log(event, path)
         return src(globs, { base: '.', buffer: false })
             .pipe(conn.newer(gulpftpconf.config.dirdest)) // les nouveaux fichiers contenus dans le dossier "dirdest" configuré dans le ficher ftp-config.json.
