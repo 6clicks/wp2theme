@@ -6,7 +6,7 @@ const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 var vftp = require('vinyl-ftp');
 var gulpftpconf = require('./ftp-config.js'); // le fichier de configuration du FTP à ne pas oublier..
-var chokidar = require('chokidar')
+var chokidar = require('chokidar');
 
 
 
@@ -75,7 +75,7 @@ function ftpUp(done) {
         persistent: true
     });
 
-    watcherFTP.on('change', function (event, path) {
+    watcherFTP.on('all', { ignoreInitial: false }, function (event, path) {
         console.log(event, path)
         return src(globs, { base: '.', buffer: false })
             .pipe(conn.newer(gulpftpconf.config.dirdest)) // les nouveaux fichiers contenus dans le dossier "dirdest" configuré dans le ficher ftp-config.json.
